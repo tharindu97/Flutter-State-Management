@@ -2,10 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(ChangeNotifierProvider(
-    create: (_) => Favorites(),
-    child: MyApp(),
-  ));
+  runApp(
+    ChangeNotifierProvider(
+      create: (_) => Favorites(),
+      child: MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatefulWidget {
